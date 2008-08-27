@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+   <!-- 
+    
+    <table name='paciente'>
+	  <column>id</column>
+	  <column>nombre</column>
+	  <column>apellido1</column>
+	  <column>apellido2</column>
+	  <row>
+	    <value>-1</value>
+	    <value>Paciente</value>
+	    <value>Test1</value>
+	    <value>Test2</value>
+	  </row>
+	</table>
+    <table name='aneurisma'>
+	  <column>id</column>
+	  <column>longitud</column>
+	  <column>anchura_max</column>
+	  <column>altura_max</column>
+	  <column>paciente_id</column>
+	  <row>
+	    <value>-1</value>
+	    <value>3</value>
+	    <value>4</value>
+	    <value>5</value>
+	    <value>-1</value>
+	  </row>
+	</table>
+	
+	<table name='usuario'>
+		<column>id</column>
+		<column>login</column>
+		<column>nombre</column>
+		<column>apellido1</column>
+		<column>apellido2</column>
+		<column>mail</column>
+		<column>centro</column>
+		<column>contrasena</column>
+		<column>administrador</column>
+		<column>account_enabled</column>
+		<column>account_expired</column>
+		<column>account_locked</column>
+		<column>credentials_expired</column>
+		<row>
+			<value>1</value>
+			<value>admin</value>
+			<value>admin</value>
+			<value>istrador</value>
+			<value>de la aplicacion</value>
+			<value>desarrollochus@gmail.com</value>
+			<value>CHUS</value>
+			<value>b521caa6e1db82e5a01c924a419870cb72b81635</value>
+			<value>1</value>
+			<value>1</value>
+			<value>0</value>
+			<value>0</value>
+			<value>0</value>
+		</row>
+	</table>
+	 -->
+</dataset>

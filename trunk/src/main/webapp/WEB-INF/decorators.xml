@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/decorators">
+	<excludes>
+		<pattern>/viewImagen*</pattern>
+		<pattern>/index*</pattern>
+	</excludes>
+	<decorator name="onlyheader" page="headerdecorator.jsp">
+		<pattern>/login.jsp</pattern>
+		<pattern>/fileUpload.html</pattern>
+		<pattern>/fileRevisionUpload.html</pattern>
+	</decorator>
+	<decorator name="main" page="maindecorator.jsp">
+		<pattern>*</pattern>
+	</decorator>
+</decorators>

@@ -1,0 +1,24 @@
+
+/* Hoja de estilos para la cabecera de la apliación */
+/* Se crean 3 columnas para posicionar el titulo y los logos independientes de la resolución*/
+
+#columna1
+{
+float: left;
+  width:25%;
+  margin:0;
+  padding:1em;
+}
+#columna2
+{
+float:left;
+  width:50%;
+  text-align: center;
+}
+#columna3
+{
+float:left;
+  width:25%;
+  margin:0;
+}
+

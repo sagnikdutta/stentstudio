@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="org.appfuse.model.User"/>
+        <mapping class="org.appfuse.model.Role"/>
+        <mapping class="com.stentstudio.model.Usuario"/>
+        <mapping class="com.stentstudio.model.ImagenAneurisma"/>
+        <mapping class="com.stentstudio.model.ImagenRevision"/>
+        <mapping class="com.stentstudio.model.Revision"/>  
+        <mapping class="com.stentstudio.model.CoilActivo"/>  
+        <mapping class="com.stentstudio.model.CoilNoActivo"/>  
+        <mapping class="com.stentstudio.model.DispositivoEmbolizacion"/>  
+        <mapping class="com.stentstudio.model.LeoPlusStent"/>  
+        <mapping class="com.stentstudio.model.LeoStent"/>
+        <mapping class="com.stentstudio.model.Microguia"/>
+        <mapping class="com.stentstudio.model.NeuroformStent"/> 
+        <mapping class="com.stentstudio.model.Procedimiento"/> 
+        <mapping class="com.stentstudio.model.Aneurisma"/> 
+        <mapping class="com.stentstudio.model.Paciente"/>  
+    </session-factory>
+</hibernate-configuration>

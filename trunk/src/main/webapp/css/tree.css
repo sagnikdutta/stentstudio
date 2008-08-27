@@ -1,0 +1,114 @@
+.bOver {
+  font-family: Verdana;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+
+  background-color: #99ccff;
+
+  cursor: hand;
+}
+
+.bOut
+{
+  font-family: Verdana;
+  font-size: 9px;
+  font-weight: bold;
+  color: white;
+  
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  
+  cursor: hand;
+}
+
+.level1
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #3962A0 ;
+  font-weight: bold;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.level2
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #3962A0 ;
+  font-weight: normal;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.level3
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #3962A0 ;
+  font-weight: normal;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.level4
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #3962A0;
+  font-weight: normal;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.level5
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #777777 ;
+  font-weight: normal;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.level6
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 9px; 
+  color: #325589 ;
+  background-color: #DAE4F2;
+  font-weight: normal;
+  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+BODY
+{ 
+  scrollbar-arrow-color: #FFFFFF; 
+  scrollbar-3dlight-color: #FFFFFF;
+  scrollbar-highlight-color: #002969;
+  scrollbar-face-color: #788DB0;
+  scrollbar-shadow-color: #002969;
+  scrollbar-track-color: #DAE4F2;
+  scrollbar-darkshadow-color: #002969 
+}
