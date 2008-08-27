@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="xmlTree.xsl"?>
+<!DOCTYPE tree SYSTEM "tree.dtd">
+   <tree>
+      <branch id="Estudios">
+       <!-- Añadir /StentStudio/-->
+         <branchText> Paciente</branchText>
+         <leaf>
+            <leafText> Nuevo</leafText>
+            <link>/formPaciente.html</link>
+         </leaf>
+          <!-- Añadir /StentStudio/-->
+         <leaf>
+            <leafText> Buscar</leafText>
+            <link>/searchPaciente.html</link>
+         </leaf>	 
+      </branch>
+      <branch id="Estadisticas">
+         <branchText> Estadísticas</branchText>
+         <leaf>
+            <leafText> Estudios</leafText>
+            <link>/estGenerales.jsp</link>
+         </leaf>
+      </branch>
+      <branch id="Modificar usuario">
+         <branchText> Modificar usuario</branchText>
+         <leaf>
+            <leafText> Cambiar contraseña</leafText>
+            <link>/cambiarClave.html</link>
+         </leaf>
+	  </branch>
+	</tree>     

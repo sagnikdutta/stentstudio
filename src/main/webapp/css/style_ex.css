@@ -1,0 +1,143 @@
+
+/*BODY
+{ 
+ scrollbar-arrow-color: #FFFFFF; 
+  scrollbar-3dlight-color: #FFFFFF;
+  scrollbar-highlight-color: #002969;
+  scrollbar-face-color: #788DB0;
+  scrollbar-shadow-color: #002969;
+  scrollbar-track-color: #DAE4F2;
+  scrollbar-darkshadow-color: #002969 
+ }
+*/
+BODY
+{ 
+	scrollbar-arrow-color: #002969; 
+	scrollbar-3dlight-color: #002969; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-face-color: #FFFFFF; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-track-color: #ffffff; 
+	scrollbar-darkshadow-color: #002969;
+}
+
+
+/*Menus*/
+.menu-up { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #002969 }
+.menu { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #002969 ; font-weight: bold ; padding-bottom: 2px; padding-top: 1px; padding-left: 4px}
+.menu2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #002969 ; font-weight: bold ; background-color: #DAE4F2; padding-bottom: 2px; padding-top: 1px; padding-left: 8px}
+.menublanco { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF; font-weight: normal ; padding-bottom: 2px; padding-top: 1px; padding-left: 4px }
+.normalItalic { font-family: Verdana, Helvetica, sans-serif; font-size: 10px; color: #002969 ; font-weight: bold; font-style: normal}
+.menuOscuro { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #0E4375; font-weight: normal ; padding-bottom: 2px; padding-top: 1px; padding-left: 4px }
+
+/*Texto*/
+.TituloLogo{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; color: #002969 ; font-weight: bold; font-style: italic  }
+.TituloLogo2{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; color: #27536F ; font-weight: bold; font-style: italic  }
+.TituloEntrada { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #002969 ; font-weight: bold; font-style: italic  }
+.TituloEntrada2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; color: #002969 ; font-weight: bold; font-style: italic  }
+.titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standar { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #002969 }
+.capitular { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #002969 ; text-transform: uppercase; font-style: normal}
+
+/*Formularios*/
+.input {
+	BORDER-RIGHT: #002969 1px solid; BORDER-TOP: #002969 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 10px; BORDER-LEFT: #002969 1px solid; COLOR: #002969; BORDER-BOTTOM: #002969 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.inputDis { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #004477 ; font-weight: bold; border: 1px #002969 solid; background-color: #DAE4F2}
+.standarover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #002969; margin-left: 2px; background-color: #E9EFF8; }
+.capitularover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-transform: uppercase; color: #002969; background-color: #E9EFF8; }
+.desplegable { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #002969; font-weight:normal; }
+
+/*misc*/
+.titulo1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #000000; }
+.titulo2 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #002969; }
+.titulo3 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bold;color: #FF2969;}
+.tituloblanco { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; text-decoration:none; color: #ffffff ; font-weight: bold }
+.Lista {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; list-style-type: none; list-style-image: url(../images/puntoLista.gif)}
+.titulo1italic { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #002969; background-color: #E9EFF8; }
+.standarblanco { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF; font-style: normal; }
+
+.tituloTabla {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #002969;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.tituloTabla2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #002969;
+	font-weight: bold;
+	background-color: #CCDBEE;
+}
+
+.tituloCabecera {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tituloPeq {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	COLOR: #002969; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.tituloPeqFino {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	COLOR: #002969; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+ 
+ /* estilo de los nuevos botones */
+.boton{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#006394;
+     background:white;
+     border:0px;
+     width:70px;
+     height:16px;           
+}
+
+   
+.botonOff{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#A3AEB3;
+     background:white;
+     border:0px;
+     width:70px;
+     height:16px;           
+}
+
+.botonAncho{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#006394;
+     background:white;
+     border:0px;
+     width:85px;
+     height:16px;           
+}
+
+.botonAncho2{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#006394;
+     background:white;
+     border:0px;
+     width:140px;
+     height:16px;           
+}

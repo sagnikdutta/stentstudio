@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+       default-lazy-init="true">
+
+    <bean id="pacienteDao" class="com.stentstudio.dao.hibernate.PacienteDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="aneurismaDao" class="com.stentstudio.dao.hibernate.AneurismaDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="procedimientoDao" class="com.stentstudio.dao.hibernate.ProcedimientoDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="imagenAneurismaDao" class="com.stentstudio.dao.hibernate.ImagenAneurismaDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="imagenRevisionDao" class="com.stentstudio.dao.hibernate.ImagenRevisionDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="usuarioDao" class="com.stentstudio.dao.hibernate.UsuarioDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="revisionDao" class="com.stentstudio.dao.hibernate.RevisionDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="microguiaDao" class="com.stentstudio.dao.hibernate.MicroguiaDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="dispositivoEmbolizacionDao" class="com.stentstudio.dao.hibernate.DispositivoEmbolizacionDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean> 
+    
+    <bean id="leoStentDao" class="com.stentstudio.dao.hibernate.LeoStentDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="leoPlusStentDao" class="com.stentstudio.dao.hibernate.LeoPlusStentDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="neuroformStentDao" class="com.stentstudio.dao.hibernate.NeuroformStentDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="coilActivoDao" class="com.stentstudio.dao.hibernate.CoilActivoDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="coilNoActivoDao" class="com.stentstudio.dao.hibernate.CoilNoActivoDaoHibernate"> 
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- Add new Managers here -->
+    
+    <bean id="pacienteManager" class="com.stentstudio.service.impl.PacienteManagerImpl">
+    	<constructor-arg ref="pacienteDao"/>
+	</bean>
+    
+    <bean id="aneurismaManager" class="com.stentstudio.service.impl.AneurismaManagerImpl">
+    	<constructor-arg ref="aneurismaDao"/>
+	</bean>
+	
+	<bean id="procedimientoManager" class="com.stentstudio.service.impl.ProcedimientoManagerImpl">
+    	<constructor-arg ref="procedimientoDao"/>
+    	<constructor-arg ref="microguiaDao"/>
+    	<constructor-arg ref="dispositivoEmbolizacionDao"/>
+    	<constructor-arg ref="leoStentDao"/>
+    	<constructor-arg ref="leoPlusStentDao"/>
+    	<constructor-arg ref="neuroformStentDao"/>
+    	<constructor-arg ref="coilActivoDao"/>
+    	<constructor-arg ref="coilNoActivoDao"/>
+	</bean>
+	
+	<bean id="imagenAneurismaManager" class="com.stentstudio.service.impl.ImagenAneurismaManagerImpl">
+    	<constructor-arg ref="imagenAneurismaDao"/>
+	</bean>
+	
+	<bean id="imagenRevisionManager" class="com.stentstudio.service.impl.ImagenRevisionManagerImpl">
+    	<constructor-arg ref="imagenRevisionDao"/>
+	</bean>
+	
+	 <!-- =================================================================== -->
+    <!-- Security classes from Acegi - used to configure Password Encryption -->
+    <!-- in UserManagerImpl. Overridden in security.xml.                     -->
+    <!-- =================================================================== -->
+    <!-- =================================================================== -->
+    <bean id="daoAuthenticationProvider" class="org.acegisecurity.providers.dao.DaoAuthenticationProvider">
+         <property name="userDetailsService" ref="userDao"/>
+         <property name="passwordEncoder" ref="passwordEncoder"/>
+    </bean>
+
+    <bean id="passwordEncoder" class="org.acegisecurity.providers.encoding.ShaPasswordEncoder"/>
+	
+	<bean id="usuarioManager" class="com.stentstudio.service.impl.UsuarioManagerImpl">
+        <property name="usuarioDao" ref="usuarioDao"/>
+        <property name="authenticationProvider" ref="daoAuthenticationProvider"/>
+	</bean>
+	
+	<bean id="revisionManager" class="com.stentstudio.service.impl.RevisionManagerImpl">
+    	<constructor-arg ref="revisionDao"/>
+	</bean>
+    
+    
+	<!-- For mail settings and future properties files -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:mail.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- JNDI DataSource for J2EE environments -->
+	<!--<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/appfuse"/>-->
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName"
+			value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="maxActive" value="100" />
+		<property name="maxWait" value="1000" />
+		<property name="poolPreparedStatements" value="true" />
+		<property name="defaultAutoCommit" value="true" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>org.appfuse.model.User</value>
+				<value>org.appfuse.model.Role</value>
+				<value>com.stentstudio.model.Paciente</value>
+				<value>com.stentstudio.model.Aneurisma</value>
+				<value>com.stentstudio.model.Procedimiento</value>
+				<value>com.stentstudio.model.Usuario</value>
+				<value>com.stentstudio.model.Revision</value>
+				<value>com.stentstudio.model.CoilActivo</value>
+		        <value>com.stentstudio.model.CoilNoActivo</value>
+		        <value>com.stentstudio.model.DispositivoEmbolizacion</value>
+		        <value>com.stentstudio.model.LeoPlusStent</value>
+		        <value>com.stentstudio.model.LeoStent</value>
+		        <value>com.stentstudio.model.Microguia</value>
+		        <value>com.stentstudio.model.NeuroformStent</value>
+		        <value>com.stentstudio.model.ImagenAneurisma</value>
+		        <value>com.stentstudio.model.ImagenRevision</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+    
+</beans>

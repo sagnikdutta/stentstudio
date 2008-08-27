@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="xmlTree.xsl"?>
+<!DOCTYPE tree SYSTEM "tree.dtd">
+   <tree>
+      <branch id="Estudios">
+         <branchText> Estudios</branchText>
+         <leaf>
+            <leafText> Nuevo</leafText>
+            <link>../Solapas/index.html</link>
+         </leaf>
+         <leaf>
+            <leafText> Modificar</leafText>
+            <link>../buscarCasoModificar.htm</link>
+         </leaf>
+		 <leaf>
+            <leafText> Consultar</leafText>
+            <link>../buscarCasoConsultar.htm</link>
+         </leaf>	 
+      </branch>
+      <branch id="Usuarios">
+         <branchText> Usuarios</branchText>
+         <leaf>
+            <leafText> Crear</leafText>
+            <link>../crearusuario.htm</link>
+         </leaf>
+         <leaf>
+            <leafText> Modificar</leafText>
+            <link>../modificarusuario.htm</link>
+         </leaf>
+      </branch>
+      <branch id="Estadisticas">
+         <branchText> Estadísticas</branchText>
+         <leaf>
+            <leafText> Paciente</leafText>
+            <link>../estPaciente.html</link>
+         </leaf>
+         <leaf>
+            <leafText> Aneurisma</leafText>
+            <link>../estAneurisma.html</link>
+         </leaf>
+         <leaf>
+            <leafText> Procedimiento</leafText>
+            <link>../estProcedimiento.html</link>
+         </leaf>
+         <leaf>
+            <leafText> Revisions</leafText>
+            <link>../estRevisiones.html</link>
+         </leaf>
+      </branch>
+      <branch id="Modificar usuario">
+         <branchText> Modificar usuario</branchText>
+         <leaf>
+            <leafText> Cambiar contraseña</leafText>
+            <link>../cambiarClave.html</link>
+         </leaf>
+	  </branch>
+	</tree>     
